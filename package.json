@@ -1,6 +1,6 @@
 {
     "name": "@nomadreservations/ngx-codemirror",
-    "version": "1.0.0-rc.1",
+    "version": "1.0.0-rc.2",
     "description": "@nomadreservations/ngx-codemirror CodeMirror (5.x) code editor in your Angular application. Server Side Rendering(SSR) compliant and @angular 5+ Ready.",
     "main": "./bundles/ngx-codemirror.umd.js",
     "module": "./esm5/ngx-codemirror.js",
@@ -39,7 +39,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://bitbucket.org/campgroundbooking/ngx-codemirror"
+        "url": "https://github.com/nomadreservations/ngx-codemirror"
     },
     "license": "UNLICENSED",
     "keywords": [
