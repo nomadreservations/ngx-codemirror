@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "strict": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "rootDir": ".",
+        "sourceMap": true,
+        "inlineSources": true,
+        "target": "es5",
+        "skipLibCheck": true,
+        "lib": [
+            "es2015",
+            "dom"
+        ],
+        "types": [
+            "node"
+        ],
+        "typeRoots": [
+            "./node_modules/@types/"
+        ]
+    },
+    "exclude": [
+        "demo/**/*.ts",
+        "node_modules"
+    ]
+}
