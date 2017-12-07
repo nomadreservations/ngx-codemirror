@@ -22,7 +22,7 @@
         "compodoc:watch": "nodemon -V -e ts,json,md --ignore dist --ignore documentation --ignore demo -d 5 -x run-s compodoc",
         "docs": "npm-run-all -s compodoc docs:watch",
         "docs:watch": "npm-run-all -p compodoc:serve compodoc:watch",
-        "docs:publish": "base deploy-docs.sh",
+        "docs:publish": "bash deploy-docs.sh",
         "doctoc": "doctoc README.md --maxlevel 3",
         "watch": "npm-run-all -p build:watch docs",
         "postversion": "git push && git push --tags",
