@@ -9,7 +9,7 @@ import 'codemirror/mode/gfm/gfm';
   selector: 'app-root',
   template: `
   <div>
-    <ngx-codemirror [(ngModel)]="value" (blur)="changed()" [config]="config"></ngx-codemirror>
+    <ngx-codemirror [(ngModel)]="value" (blur)="onBlur()" [config]="config"></ngx-codemirror>
   </div>
   `
 })
@@ -37,11 +37,17 @@ export class AppComponent implements OnInit {
       });
 
     this._codeMirror.instance$.subscribe((editor) => {
-      console.log(editor.state);
+      console.log(
+        `%cGot CodeMirror.Editor instance, the current mode is ${editor.getDoc().getMode().name}`,
+        'padding: 0 0.5rem; background: #000; color: #a1c549'
+      );
+      console.log(editor.getDoc());
     });
   }
 
-  public changed() {
+  public onBlur() {
+    console.log(`%c--------------------- New Document Value --------------------`, 'background-color: #2677d0; color: #fff');
     console.log(this.value);
+    console.log(`%c$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$`, 'background-color: #2677d0; color: #fff');
   }
 }
