@@ -2,16 +2,22 @@
     "compilerOptions": {
         "rootDir": ".",
         "baseUrl": ".",
+        "declaration": true,
+        "stripInternal": false,
+        "experimentalDecorators": true,
+        "noUnusedParameters": true,
+        "strictNullChecks": true,
+        "importHelpers": true,
+        "newLine": "lf",
+        "module": "es2015",
+        "moduleResolution": "node",
         "paths": {
             "@angular/*": [
-                "node_modules/@angular/*"
+                "../node_modules/@angular/*"
             ]
         },
-        "outDir": "dist",
-        "declaration": true,
+        "outDir": "../dist",
         "strict": true,
-        "moduleResolution": "node",
-        "module": "es2015",
         "target": "es2015",
         "lib": [
             "es2015",
@@ -24,20 +30,19 @@
         "typeRoots": [
             "./node_modules/@types/"
         ],
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
         "sourceMap": true,
         "inlineSources": true
     },
     "files": [
         "public_api.ts",
-        "node_modules/zone.js/dist/zone.js.d.ts"
+        "../node_modules/zone.js/dist/zone.js.d.ts"
     ],
     "angularCompilerOptions": {
-        "skipTemplateCodegen": true,
         "annotateForClosureCompiler": true,
         "strictMetadataEmit": true,
         "flatModuleOutFile": "ngx-codemirror.js",
-        "flatModuleId": "ngx-codemirror"
+        "flatModuleId": "@nomadreservations/ngx-codemirror",
+        "skipTemplateCodegen": true,
+        "fullTemplateTypeCheck": true
     }
 }

@@ -1,8 +1,12 @@
 $ cat .gitignore
 node_modules
 /dist
+/build
 /documentation
 /coverage
 
 *.log
 *.tgz
+
+.yalc
+yalc.lock
