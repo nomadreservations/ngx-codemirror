@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response } from '@angular/http';
-import { CodemirrorService } from '../../../src/codemirror.service';
+import { CodemirrorService } from '@nomadreservations/ngx-codemirror';
 
 import 'rxjs/add/operator/map';
 import 'codemirror/mode/gfm/gfm';

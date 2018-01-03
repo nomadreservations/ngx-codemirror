@@ -7,14 +7,11 @@ import { CodemirrorService } from './codemirror.service';
  * @angular 5.x+ SSR ready CodeMirror wrapping module.
  */
 @NgModule({
-  declarations: [
-    CodemirrorComponent,
-  ],
   providers: [
     CodemirrorService
   ],
-  exports: [
-    CodemirrorComponent,
-  ]
+  declarations: [CodemirrorComponent],
+  exports: [CodemirrorComponent],
+  entryComponents: [CodemirrorComponent]
 })
 export class CodemirrorModule {}
