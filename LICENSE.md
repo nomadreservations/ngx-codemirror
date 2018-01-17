@@ -1,6 +1,6 @@
 **The MIT License (MIT)**
 
-Copyright © 2017 _Nomad Reservations LLC_
+Copyright © 2017-2018 _Nomad Reservations LLC_
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

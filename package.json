@@ -48,7 +48,7 @@
         "type": "git",
         "url": "https://github.com/nomadreservations/ngx-codemirror"
     },
-    "license": "UNLICENSED",
+    "license": "MIT",
     "keywords": [
         "angular",
         "aot",
