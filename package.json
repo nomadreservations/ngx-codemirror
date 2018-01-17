@@ -1,6 +1,6 @@
 {
     "name": "@nomadreservations/ngx-codemirror",
-    "version": "1.0.0-rc.3",
+    "version": "1.0.0",
     "description": "@nomadreservations/ngx-codemirror CodeMirror (5.x) code editor in your Angular application. Server Side Rendering(SSR) compliant and @angular 5+ Ready.",
     "main": "./bundles/ngx-codemirror.umd.js",
     "module": "./esm5/ngx-codemirror.js",
@@ -17,6 +17,9 @@
         "publish-lib:next": "npm publish --tag next ./dist --registry=https://registry.npmjs.org/",
         "commit": "git cz -a",
         "release": "release-it",
+        "release:major": "npm run release -- major -n",
+        "release:minor": "npm run release -- minor -n",
+        "release:patch": "npm run release -- patch -n",
         "compodoc": "compodoc -p ./tsconfig.json",
         "compodoc:serve": "npm run compodoc -s",
         "compodoc:watch": "nodemon -V -e ts,json,md --ignore dist --ignore documentation --ignore demo -d 5 -x run-s compodoc",
