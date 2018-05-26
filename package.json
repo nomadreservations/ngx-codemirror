@@ -1,7 +1,7 @@
 {
   "name": "@nomadreservations/ngx-codemirror",
   "homepage": "http://nomadreservations.co",
-  "version": "2.0.0-rc.1",
+  "version": "2.0.0-rc.2",
   "author": {
     "name": "Paul Ryan <paullryan>",
     "url": "https://github.com/paullryan"
