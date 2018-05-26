@@ -57,7 +57,6 @@
     "doctoc": "doctoc README.md --maxlevel 3",
     "watch": "npm-run-all -p build:watch docs"
   },
-  "private": true,
   "devdependencies": {
     "@angular/animations": "^6.0.3",
     "@angular/common": "^6.0.3",
