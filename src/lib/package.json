@@ -1,0 +1,36 @@
+{
+  "$schema": "../../node_modules/ng-packagr/package.schema.json",
+  "name": "@nomadreservations/ngx-codemirror",
+  "version": "1.0.0",
+  "homepage": "http://nomadreservations.co",
+  "author": {
+    "name": "Paul Ryan <paullryan>",
+    "url": "https://github.com/paullryan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nomadreservations/ngx-codemirror"
+  },
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "aot",
+    "aot-compatible",
+    "aot-compilation",
+    "library",
+    "ng",
+    "ngx-codemirror",
+    "typescript"
+  ],
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public_api.ts"
+    },
+    "dest": "../../dist/ngx-codemirror"
+  },
+  "peerDependencies": {
+    "@angular/core": ">=6.0.0",
+    "@angular/common": ">=6.0.0",
+    "codemirror": ">=5.38.0"
+  }
+}

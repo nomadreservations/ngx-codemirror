@@ -1,7 +1,5 @@
 # @nomadreservations/ngx-codemirror
-`@nomadreservations/ngx-codemirror` [CodeMirror (5.x)](http://codemirror.net/) code editor in your Angular application. Server Side Rendering(SSR) compliant and @angular 6+ Ready.
-
-_Note: If you're looking for @angular 5 support please use version [1.0.x](https://github.com/nomadreservations/ngx-codemirror/tree/1.0.0)_
+`@nomadreservations/ngx-codemirror` [CodeMirror (5.x)](http://codemirror.net/) code editor in your Angular application. Server Side Rendering(SSR) compliant and @angular 5+ Ready.
 
 Originally derived from [ng2-codemirror](https://github.com/chymz/ng2-codemirror)
 
@@ -42,8 +40,19 @@ npm i @nomadreservations/ngx-codemirror --save
 ## 2. Project structure
 - Library:
     - **src** folder for the classes
-    - **src/lib/public_api.ts** entry point for all public APIs of the package
+    - **public_api.ts** entry point for all public APIs of the package
     - **package.json** _npm_ options
+    - **rollup.config.js** _Rollup_ configuration for building the _umd_ bundles
+    - **rollup.es.config.js** _Rollup_ configuration for building the _es2015_ bundles
+    - **tsconfig-build.json** _ngc_ compiler options for _AoT compilation_
+    - **build.js** building process using _ShellJS_
+- Testing:
+    - **tests** folder for unit & integration tests
+    - **karma.conf.js** _Karma_ configuration that uses _webpack_ to build the tests
+    - **spec.bundle.js** defines the files used by _webpack_
+- Extra:
+    - **tslint.json** _TypeScript_ linter rules with _Codelyzer_
+    - **travis.yml** _Travis CI_ configuration
 
 
 ## 3. Testing
@@ -58,6 +67,10 @@ The following command:
 ```Shell
 yarn build
 ```
+- starts _TSLint_ with _Codelyzer_
+- starts _AoT compilation_ using _ngc_ compiler
+- creates `dist` folder with all the files of distribution
+
 To test locally the npm package:
 ```Shell
 yarn pack-lib
