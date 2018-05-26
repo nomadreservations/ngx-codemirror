@@ -419,23 +419,8 @@
 <ul>
 <li>Library:<ul>
 <li><strong>src</strong> folder for the classes</li>
-<li><strong>public_api.ts</strong> entry point for all public APIs of the package</li>
+<li><strong>src/lib/public_api.ts</strong> entry point for all public APIs of the package</li>
 <li><strong>package.json</strong> <em>npm</em> options</li>
-<li><strong>rollup.config.js</strong> <em>Rollup</em> configuration for building the <em>umd</em> bundles</li>
-<li><strong>rollup.es.config.js</strong> <em>Rollup</em> configuration for building the <em>es2015</em> bundles</li>
-<li><strong>tsconfig-build.json</strong> <em>ngc</em> compiler options for <em>AoT compilation</em></li>
-<li><strong>build.js</strong> building process using <em>ShellJS</em></li>
-</ul>
-</li>
-<li>Testing:<ul>
-<li><strong>tests</strong> folder for unit &amp; integration tests</li>
-<li><strong>karma.conf.js</strong> <em>Karma</em> configuration that uses <em>webpack</em> to build the tests</li>
-<li><strong>spec.bundle.js</strong> defines the files used by <em>webpack</em></li>
-</ul>
-</li>
-<li>Extra:<ul>
-<li><strong>tslint.json</strong> <em>TypeScript</em> linter rules with <em>Codelyzer</em></li>
-<li><strong>travis.yml</strong> <em>Travis CI</em> configuration</li>
 </ul>
 </li>
 </ul>
@@ -444,12 +429,7 @@
 <div><pre class="line-numbers"><code class="language-Shell">yarn test</code></pre></div><p>It also reports coverage using Istanbul.</p>
 <h2 id="4-building">4. Building</h2>
 <p>The following command:</p>
-<div><pre class="line-numbers"><code class="language-Shell">yarn build</code></pre></div><ul>
-<li>starts <em>TSLint</em> with <em>Codelyzer</em></li>
-<li>starts <em>AoT compilation</em> using <em>ngc</em> compiler</li>
-<li>creates <code>dist</code> folder with all the files of distribution</li>
-</ul>
-<p>To test locally the npm package:</p>
+<div><pre class="line-numbers"><code class="language-Shell">yarn build</code></pre></div><p>To test locally the npm package:</p>
 <div><pre class="line-numbers"><code class="language-Shell">yarn pack-lib</code></pre></div><p>Then you can install it in an app to test it:</p>
 <div><pre class="line-numbers"><code class="language-Shell">yarn add [path]&#64;nomadreservations/ngx-codemirror-[version].tgz</code></pre></div><h2 id="5-publishing">5. Publishing</h2>
 <p>Before publishing the first time:</p>

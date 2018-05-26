@@ -11,24 +11,19 @@ __Table of Contents:__
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
-- [@nomadreservations/ngx-codemirror](#nomadreservations-ngx-codemirror)
-  - [1. Installation](#1-installation)
-  - [2. Project structure](#2-project-structure)
-  - [3. Testing](#3-testing)
-  - [4. Building](#4-building)
-  - [5. Publishing](#5-publishing)
-  - [6. Documentation](#6-documentation)
-  - [7. Using the library](#7-using-the-library)
-    - [7.1. Installing](#71-installing)
-    - [7.2. Sample](#72-sample)
-    - [7.3. Configuration](#73-configuration)
-    - [7.4. Loading](#74-loading)
-      - [Using SystemJS configuration](#using-systemjs-configuration)
-      - [Angular-CLI](#angular-cli)
-      - [Rollup or webpack](#rollup-or-webpack)
-      - [Plain JavaScript](#plain-javascript)
-    - [7.5. AoT compilation](#75-aot-compilation)
-  - [8. License](#8-license)
+- [1. Installation](#1-installation)
+- [2. Project structure](#2-project-structure)
+- [3. Testing](#3-testing)
+- [4. Building](#4-building)
+- [5. Publishing](#5-publishing)
+- [6. Documentation](#6-documentation)
+- [7. Using the library](#7-using-the-library)
+  - [7.1. Installing](#71-installing)
+  - [7.2. Sample](#72-sample)
+  - [7.3. Configuration](#73-configuration)
+  - [7.4. Loading](#74-loading)
+  - [7.5. AoT compilation](#75-aot-compilation)
+- [8. License](#8-license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
