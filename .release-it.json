@@ -1,6 +1,6 @@
 {
   "buildCommand": "npm run build:release",
-  "afterReleaseCommand": "echo Successfully released ${version} to ${dist.repo}.",
+  "afterReleaseCommand": "npm run docs:publish && echo Successfully released ${version} to ${dist.repo}.",
   "npm": {
     "publishPath": "./dist/ngx-codemirror"
   }
