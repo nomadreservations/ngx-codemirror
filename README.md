@@ -31,7 +31,15 @@ __Table of Contents:__
 ## 1. Installation
 To use @nomadreservations/ngx-codemirror in your project install it via npm:
 ```
-npm i @nomadreservations/ngx-codemirror --save
+npm i @nomadreservations/ngx-codemirror codemirror --save
+npm i @types/codemirror --save-dev
+```
+
+or
+
+```
+yarn add @nomadreservations/ngx-codemirror codemirror
+yarn add --dev @types/codemirror --save-dev
 ```
 
 ## 2. Project structure
