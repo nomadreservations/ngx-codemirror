@@ -7,11 +7,7 @@ import 'codemirror/mode/gfm/gfm';
 
 @Component({
   selector: 'app-root',
-  template: `
-  <div>
-    <ngx-codemirror [(ngModel)]="value" (blur)="onBlur()" [config]="config"></ngx-codemirror>
-  </div>
-  `
+  templateUrl: './app.component.html'
 })
 export class AppComponent implements OnInit {
   public config = {
@@ -23,6 +19,8 @@ export class AppComponent implements OnInit {
     tabSize: 2
   };
   public value: any;
+  public language = 'gfm';
+  public codemirror;
 
   constructor(
     private _codeMirror: CodemirrorService,
@@ -39,12 +37,27 @@ export class AppComponent implements OnInit {
       });
 
     this._codeMirror.instance$.subscribe((editor) => {
+      this.codemirror = editor;
       console.log(
         `%cGot CodeMirror.Editor instance, the current mode is ${editor.getDoc().getMode().name}`,
         'padding: 0 0.5rem; background: #000; color: #a1c549'
       );
       console.log(editor.getDoc());
     });
+  }
+
+  public languageChange(language) {
+    if (this.codemirror) {
+      switch (language) {
+        case 'js':
+          this.codemirror.setOption('mode', {name: 'javascript'});
+          break;
+        case 'gfm':
+        default:
+          this.codemirror.setOption('mode', {name: 'gfm'});
+      }
+    }
+
   }
 
   public onBlur() {
